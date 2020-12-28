@@ -24,3 +24,11 @@ Especially for `ogr2ogr`
 brew install gdal
 ```
 
+## Imports
+
+Geojson to PostGIS:
+
+```
+ogr2ogr -f "PostgreSQL" PG:"dbname=my_database user=postgres" "source_data.json" -nln destination_table
+```
+
